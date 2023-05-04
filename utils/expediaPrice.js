@@ -53,11 +53,4 @@ console.log(result);
   return result;
 };
 
-scrapeExpedia()
-  .then((value) => {
-    return value;
-  })
-  .catch((error) => {
-    console.error(error);
-  });
 module.exports.scrapeExpedia = scrapeExpedia;

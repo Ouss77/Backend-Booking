@@ -15,6 +15,7 @@ let scrapeBooking = async (CITY_NAME, CHECK_IN_DATE, CHECK_OUT_DATE) => {
   const result = await page.evaluate(() => {
     let hotels = [];
     let titles = document.querySelectorAll(".a23c043802");
+    console.log(titles);
     let images = document.querySelectorAll(".b8b0793b0e");
     let prices = document.querySelectorAll(".e729ed5ab6");
     let urls = document.querySelectorAll(".e13098a59f");
